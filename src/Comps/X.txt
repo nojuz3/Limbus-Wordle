@@ -1,0 +1,16 @@
+//
+
+Wrath
+Lust
+Sloth
+Gluttony
+Gloom
+Pride
+Envy
+
+//
+
+Slash
+Pierce
+Blunt
+

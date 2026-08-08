@@ -1,0 +1,353 @@
+[
+  {
+    "id": "yisang-lcb",
+    "sinner": "Yi-Sang",
+    "name": "LCB Yi Sang",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 1,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Pierce",
+        "coin": 2,
+        "affinity": "Envy"
+      },
+      {
+        "type": "Slash",
+        "coin": 3,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Guard",
+        "coin": 1,
+        "affinity": "Gloom"
+      }
+    ]
+  },
+  {
+    "id": "SevenYi-sang",
+    "sinner": "Yi-Sang",
+    "name": "Seven Assoc. South Section 6 Yi Sang",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 2,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Slash",
+        "coin": 3,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Slash",
+        "coin": 4,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Gloom"
+      }
+    ]
+  },
+  {
+    "id": "faust-lcb",
+    "sinner": "Faust",
+    "name": "LCB Faust",
+    "skills": [
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Blunt",
+        "coin": 2,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Pierce",
+        "coin": 4,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Pride"
+      }
+    ]
+  },
+  {
+    "id": "don-quixote-lcb",
+    "sinner": "Don-Quixote",
+    "name": "LCB Don Quixote",
+    "skills": [
+      {
+        "type": "Pierce",
+        "coin": 1,
+        "affinity": "Lust"
+      },
+      {
+        "type": "Pierce",
+        "coin": 1,
+        "affinity": "Envy"
+      },
+      {
+        "type": "Pierce",
+        "coin": 3,
+        "affinity": "Gluttony"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Lust"
+      }
+    ]
+  },
+  {
+    "id": "ryoshu-lcb",
+    "sinner": "Ryoshu",
+    "name": "LCB Ryoshu",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 1,
+        "affinity": "Gluttony"
+      },
+      {
+        "type": "Slash",
+        "coin": 2,
+        "affinity": "Lust"
+      },
+      {
+        "type": "Slash",
+        "coin": 3,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Gluttony"
+      }
+    ]
+  },
+  {
+    "id": "meursault-lcb",
+    "sinner": "Meursault",
+    "name": "LCB Meursault",
+    "skills": [
+      {
+        "type": "Blunt",
+        "coin": 2,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Blunt",
+        "coin": 4,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Guard",
+        "coin": 1,
+        "affinity": "Sloth"
+      }
+    ]
+  },
+  {
+    "id": "hong-lu-lcb",
+    "sinner": "Hong-lu",
+    "name": "LCB Hong-lu",
+    "skills": [
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Slash",
+        "coin": 2,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Blunt",
+        "coin": 2,
+        "affinity": "Lust"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Sloth"
+      }
+    ]
+  },
+  {
+    "id": "heathcliff-lcb",
+    "sinner": "Heathcliff",
+    "name": "LCB Heathcliff",
+    "skills": [
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Envy"
+      },
+      {
+        "type": "Blunt",
+        "coin": 2,
+        "affinity": "Wrath"
+      },
+      {
+        "type": "Blunt",
+        "coin": 2,
+        "affinity": "Lust"
+      },
+      {
+        "type": "Counter",
+        "coin": 1,
+        "affinity": "Envy"
+      }
+    ]
+  },
+  {
+    "id": "ishmael-lcb",
+    "sinner": "Ishmael",
+    "name": "LCB Ishmael",
+    "skills": [
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Wrath"
+      },
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Gluttony"
+      },
+      {
+        "type": "Blunt",
+        "coin": 1,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Guard",
+        "coin": 1,
+        "affinity": "Wrath"
+      }
+    ]
+  },
+  {
+    "id": "rodion-lcb",
+    "sinner": "Rodion",
+    "name": "LCB Rodion",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 1,
+        "affinity": "Gluttony"
+      },
+      {
+        "type": "Slash",
+        "coin": 2,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Slash",
+        "coin": 4,
+        "affinity": "Wrath"
+      },
+      {
+        "type": "Counter",
+        "coin": 1,
+        "affinity": "Wrath"
+      }
+    ]
+  },
+  {
+    "id": "sinclair-lcb",
+    "sinner": "Sinclair",
+    "name": "LCB Sinclair",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 1,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Slash",
+        "coin": 3,
+        "affinity": "Wrath"
+      },
+      {
+        "type": "Slash",
+        "coin": 3,
+        "affinity": "Envy"
+      },
+      {
+        "type": "Counter",
+        "coin": 1,
+        "affinity": "Pride"
+      }
+    ]
+  },
+  {
+    "id": "outis-lcb",
+    "sinner": "Outis",
+    "name": "LCB Outis",
+    "skills": [
+      {
+        "type": "Pierce",
+        "coin": 3,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Slash",
+        "coin": 2,
+        "affinity": "Pride"
+      },
+      {
+        "type": "Pierce",
+        "coin": 1,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Evade",
+        "coin": 1,
+        "affinity": "Sloth"
+      }
+    ]
+  },
+  {
+    "id": "gregor-lcb",
+    "sinner": "Gregor",
+    "name": "LCB Gregor",
+    "skills": [
+      {
+        "type": "Slash",
+        "coin": 1,
+        "affinity": "Gloom"
+      },
+      {
+        "type": "Pierce",
+        "coin": 1,
+        "affinity": "Gluttony"
+      },
+      {
+        "type": "Pierce",
+        "coin": 2,
+        "affinity": "Sloth"
+      },
+      {
+        "type": "Guard",
+        "coin": 1,
+        "affinity": "Gloom"
+      }
+    ]
+  }
+]

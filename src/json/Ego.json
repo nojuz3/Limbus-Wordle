@@ -1,0 +1,80 @@
+{
+    "1-Yi-Sang": [
+        {
+            "name": "LCB Yi Sang",
+            "Skills": [
+                "Slash",
+                "Slash",
+                "Slash",
+                "Evade"
+            ],
+            "Coins": [
+                "2",
+                "3",
+                "4",
+                "1"
+            ],
+            "Affinity": [
+                "Gloom",
+                "Wrath",
+                "Lust",
+                "Pride"
+            ]
+        }
+    ],
+    "2-Faust": [
+        {
+            "name": "LCB Faust"
+        }
+    ],
+    "3-Don-Quixote": [
+        {
+            "name": "LCB Don Quixote"
+        }
+    ],
+    "4-Ryoshu": [
+        {
+            "name": "LCB Ryoshu"
+        }
+    ],
+    "5-Meursault": [
+        {
+            "name": "LCB Meursault"
+        }
+    ],
+    "6-Hong-lu": [
+        {
+            "name": "LCB Hong lu"
+        }
+    ],
+    "7-Heathcliff": [
+        {
+            "name": "LCB Heathcliff"
+        }
+    ],
+    "8-Ishmael": [
+        {
+            "name": "LCB Ishmael"
+        }
+    ],
+    "9-Rodion": [
+        {
+            "name": "LCB Rodion"
+        }
+    ],
+    "10-Sinclair": [
+        {
+            "name": "LCB Sinclair"
+        }
+    ],
+    "11-Outis": [
+        {
+            "name": "LCB Outis"
+        }
+    ],
+    "12-Gregor": [
+        {
+            "name": "LCB Gregor"
+        }
+    ]
+}

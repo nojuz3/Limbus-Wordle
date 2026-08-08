@@ -1,0 +1,24 @@
+.container-pos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+}
+.button-box {
+    margin-top: 2rem;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+}
+.button{
+    width: 80%;
+    height: 80%;
+}
