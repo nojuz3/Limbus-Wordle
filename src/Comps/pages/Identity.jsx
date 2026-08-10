@@ -98,6 +98,7 @@ export default function Identity() {
   function test() {
     console.log(guess);
   }
+
   return (
     <div class="content">
       <button onClick={() => test()}>TEST</button>
@@ -110,6 +111,7 @@ export default function Identity() {
             onChange={(e) => setSearch(e.target.value)}
             class="search-input"
             onFocus={() => setFocus(true)}
+            onBlur={() => setTimeout(() => setFocus(false), 100)}
           />
 
           {focus && (
@@ -133,16 +135,16 @@ export default function Identity() {
           {guess.reverse().map((item, index) => (
             <div class="guessidentity" key={index}>
               <h3>{item.name}</h3>
-              <div>{item.sinner}</div>
-              <div>{item.skills[0].type}</div>
-              <div>{item.skills[1].type}</div>
-              <div>{item.skills[2].type}</div>
-              <div>{item.skills[0].coin}</div>
-              <div>{item.skills[1].coin}</div>
-              <div>{item.skills[2].coin}</div>
-              <div>{item.skills[0].affinity}</div>
-              <div>{item.skills[1].affinity}</div>
-              <div>{item.skills[2].affinity}</div>
+              <div class={item.result.correct ? "green" : "red"}>{item.sinner}</div>
+              <div class={item.result.resultskill[0]} >{item.skills[0].type}</div>
+              <div class={item.result.resultskill[1]}>{item.skills[1].type}</div>
+              <div class={item.result.resultskill[2]}>{item.skills[2].type}</div>
+              <div class={item.result.resultcoin[0]}>{item.skills[0].coin}</div>
+              <div class={item.result.resultcoin[1]}>{item.skills[1].coin}</div>
+              <div class={item.result.resultcoin[2]}>{item.skills[2].coin}</div>
+              <div class={item.result.resultaffinity[0]}>{item.skills[0].affinity}</div>
+              <div class={item.result.resultaffinity[1]}>{item.skills[1].affinity}</div>
+              <div class={item.result.resultaffinity[2]}>{item.skills[2].affinity}</div>
             </div>
           ))}
         </div>

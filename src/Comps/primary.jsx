@@ -16,8 +16,8 @@ export default function primary() {
   return (
     <>
       <div class="header">
-        <div>
-          <button onClick={() => navigate("/")} class="home-button"></button>
+        <div class="headerBox">
+          <button onClick={() => navigate("/")} class="home-button">Return To main</button>
         </div>
         <div></div>
       </div>

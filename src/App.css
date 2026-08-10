@@ -4,10 +4,27 @@
 }
 .header{
     background-color: brown;
+    height: 5vh;
+}
+.headerBox{
+    height: 100%;
 }
 .home-button{
-    height: 50px;
-    width: 50px;
+  background-color: black;
+  border: 2px solid gray;
+  color: white;
+  text-overflow: clip;
+  text-wrap: nowrap;
+  overflow: hidden;
+  height: 100%;
+  width: 52px;
+  transition: width 0.6s;
+}
+.home-button:hover{
+  width: 8vw;
+}
+.home-button:active{
+    scale: 1.05;
 }
 .main{
     background-color: rgb(145, 77, 77);
@@ -25,4 +42,13 @@
 .footer{
     background-color: black;
     color: white;
+}
+.green{
+    background-color: lime;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
 }

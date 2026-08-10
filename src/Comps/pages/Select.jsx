@@ -8,11 +8,9 @@ export default function Select() {
     switch (res) {
       case "id":
         navigate("/identity");
-        console.log("navigate to id");
         break;
       case "ego":
         navigate("/ego");
-        console.log("navigate to ego");
         break;
       default:
         console.log("error");
