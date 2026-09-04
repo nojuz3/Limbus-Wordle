@@ -23,11 +23,12 @@ export default function primary() {
       </div>
       <div class="main">
         <div class="play">
-          <div>
+          <div class="play-2">
             <Routes>
               <Route path="/" element={<Select />} />
-              <Route path="/Ego" element={<Ego />} />
-              <Route path="/Identity" element={<Identity />} />
+              <Route path="/ego" element={<Ego />} />
+              <Route path="/identity" element={<Identity />} />
+              <Route path="*" element={<Select/>} />
             </Routes>
           </div>
         </div>

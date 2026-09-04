@@ -24,14 +24,12 @@ export default function Select() {
           <button className="button" onClick={() => nav("id")}>
             Identity
           </button>
-          <p>Identity</p>
         </div>
 
         <div className="button-box">
           <button className="button" onClick={() => nav("ego")}>
             Ego
           </button>
-          <p>Ego</p>
         </div>
       </div>
     </div>
