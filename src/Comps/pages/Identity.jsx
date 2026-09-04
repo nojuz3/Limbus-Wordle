@@ -7,6 +7,8 @@ export default function Identity() {
   const [guess, setGuess] = useState([]);
   const [search, setSearch] = useState("");
   const [focus,setFocus] = useState(false);
+  const [correct,setCorrect] = useState(false);
+  const [num,setNum] = useState(0);
   // setData(identity_json);
   useEffect(() => {
     setData(identity_json);
@@ -24,6 +26,13 @@ export default function Identity() {
   function handleguess(compare, target) {
     const sinnerMatch = compare.sinner === target.sinner;
     const Match = compare.id === target.id;
+    
+    if(Match){
+      setTimeout(()=>{
+        setCorrect(true);
+      },150)
+      
+    }
 
     const targetSkillTypes = target.skills.map((i) => i.type);
     const compareSkillTypes = compare.skills.map((i) => i.type);
@@ -36,6 +45,7 @@ export default function Identity() {
     //skills
     const resultskill = new Array(compareSkillTypes.length).fill("red");
     for (let i = 0; i < 4; i++) {
+      console.log(i)
       for (let y = 0; y < 4; y++) {
         if (compareSkillTypes[i] == targetSkillTypes[y] && i == y) {
           resultskill[i] = "green";
@@ -93,14 +103,28 @@ export default function Identity() {
     setGuess((prev) => [...prev, { ...compare, result }]);
     setSearch("");
     setFocus(false);
+    setNum(last => last + 1);
     console.log(handleguess(compare, target));
   };
   function test() {
     console.log(guess);
   }
+  function Restart(){
+    window.location.reload();
+  }
 
   return (
     <div class="content">
+      {correct && (
+        <div class="correct-box">
+          <div class="correct-try-box">
+            <div class="correct-try">Guessed in {num} tries</div>
+          </div>
+          <div class="correct-button-box">
+            <button class="correct-button" onClick={() => Restart()}>Restart</button>
+          </div>
+        </div>
+      )}
       <button onClick={() => test()}>TEST</button>
       <div class="box">
         <div class="guess-input">
@@ -132,19 +156,22 @@ export default function Identity() {
 
       <div class="guessbox">
         <div className="guesses">
-          {guess.reverse().map((item, index) => (
-            <div class="guessidentity" key={index}>
+          {[...guess].reverse().map((item) => (
+            <div class="guessidentity" key={item.name}>
               <h3>{item.name}</h3>
               <div class={item.result.correct ? "green" : "red"}>{item.sinner}</div>
               <div class={item.result.resultskill[0]} >{item.skills[0].type}</div>
               <div class={item.result.resultskill[1]}>{item.skills[1].type}</div>
               <div class={item.result.resultskill[2]}>{item.skills[2].type}</div>
+              <div class={item.result.resultskill[3]}>{item.skills[3].type}</div>
               <div class={item.result.resultcoin[0]}>{item.skills[0].coin}</div>
               <div class={item.result.resultcoin[1]}>{item.skills[1].coin}</div>
               <div class={item.result.resultcoin[2]}>{item.skills[2].coin}</div>
+              <div class={item.result.resultcoin[3]}>{item.skills[3].coin}</div>
               <div class={item.result.resultaffinity[0]}>{item.skills[0].affinity}</div>
               <div class={item.result.resultaffinity[1]}>{item.skills[1].affinity}</div>
               <div class={item.result.resultaffinity[2]}>{item.skills[2].affinity}</div>
+              <div class={item.result.resultaffinity[3]}>{item.skills[3].affinity}</div>
             </div>
           ))}
         </div>

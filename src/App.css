@@ -1,15 +1,14 @@
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.header{
-    background-color: brown;
-    height: 5vh;
+.header {
+  background-color: brown;
+  height: 5vh;
 }
-.headerBox{
-    height: 100%;
+.headerBox {
+  height: 100%;
 }
-.home-button{
+.home-button {
   background-color: black;
   border: 2px solid gray;
   color: white;
@@ -20,35 +19,152 @@
   width: 52px;
   transition: width 0.6s;
 }
-.home-button:hover{
+.home-button:hover {
   width: 8vw;
 }
-.home-button:active{
-    scale: 1.05;
+.home-button:active {
+  scale: 1.05;
 }
-.main{
-    background-color: rgb(145, 77, 77);
-    height: auto;
-    display: flex;
-    justify-content: center;
+.main {
+  background-color: rgb(34, 34, 34);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-.play{
-    background-color: rgb(126, 126, 126);
-    border: 3px double yellow;
-    width: 70%;
-    
+.play {
+  padding: 24px;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #0d0d0d;
+  border: 2px solid #c9a86a;
+  box-shadow:
+    0 0 0 6px #0d0d0d,
+    0 0 0 8px #c9a86a,
+    0 0 20px rgba(201, 168, 106, 0.15);
 }
 
-.footer{
-    background-color: black;
-    color: white;
+.play-2 {
+  min-height: 95%;
+  height: fit-content;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #c9a86a;
+  background:
+    linear-gradient(135deg, rgba(201, 168, 106, 0.08) 0%, transparent 20%),
+    linear-gradient(-135deg, rgba(201, 168, 106, 0.08) 0%, transparent 20%);
 }
-.green{
-    background-color: lime;
+
+.play-2::before,
+.play-2::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  background:
+    linear-gradient(to right, #c9a86a 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, #c9a86a 2px, transparent 2px) 0 100%,
+    linear-gradient(to right, #c9a86a 2px, transparent 2px) 0 calc(100% - 10px),
+    linear-gradient(to top, #c9a86a 2px, transparent 2px) 10px 100%;
+  background-size:
+    30px 2px,
+    2px 30px,
+    22px 2px,
+    2px 22px;
+  background-repeat: no-repeat;
 }
-.yellow{
-    background-color: yellow;
+
+.play-2::before {
+  bottom: -6px;
+  left: -6px;
 }
-.red{
-    background-color: red;
+
+.play-2::after {
+  bottom: -6px;
+  right: -6px;
+  transform: scaleX(-1);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.green {
+  background-color: lime;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+
+.correct-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  height: 25vh;
+  background: #0d0d0d;
+  border: 2px solid #c9a86a;
+  color: white;
+  box-shadow:
+    0 0 0 6px #0d0d0d,
+    0 0 0 8px #c9a86a,
+    0 0 20px rgba(201, 168, 106, 0.15);
+  animation: popIn 0.4s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.correct-try-box {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.correct-try {
+  color: rgb(194, 255, 250);
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.correct-button-box {
+  width: 100%;
+}
+.correct-button {
+  background-color: #0d0d0d;
+  border: 2px solid #c9a86a;
+  color: #c9a86a;
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+.correct-button:hover {
+  background-color: #1d1d1d;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.correct-button:active {
+  transform: scale(1.05);
+}
+
+.correct-box svg {
+  position: absolute;
+  scale: 0.5;
+  top: -10%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* ensures it stays on top of other elements in the box */
 }

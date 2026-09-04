@@ -13,7 +13,7 @@
   width: 50%;
 }
 .button-box {
-    margin-top: 2rem;
+  margin-top: 2rem;
   width: 10rem;
   height: 10rem;
   text-align: center;
@@ -21,4 +21,27 @@
 .button{
     width: 80%;
     height: 80%;
+    border-radius: 5%;
+    border: 3px double #c9a86a;
+    background-color: black;
+    color: white;
+      box-shadow:
+    0 0 0 6px #0d0d0d,
+    0 0 0 8px #c9a86a,
+    0 0 20px rgba(201, 168, 106, 0.15);
+    font-size: medium;
 }
+.button:hover{
+  background-color: #1f1f1f;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.button:active{
+  transform: scale(0.98);
+}
+.text-select{
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+  color: rgb(180, 0, 0);
+  -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+  }
